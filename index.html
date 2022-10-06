@@ -2,19 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=0.1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Timed JavaScript Quiz</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">   
 </head>
 
 <body>
-  <header>
 
-  </header>
+ 
+  <!--Box Div  -->
+ <nav>
+  <section id ="high_scores">
+    <a href ="#high-score-link">View High Scores</a>
+  </section>
+
+  <section id ="timer"></section>
+ </nav>
+
+<main id= "startQuiz-box">
+<section id= "startQuiz-text">
+
+<!-- View Score button -->
+  <!-- <div class="view-score"><button>View High Score</button></div> -->
+  
+  <h2 style="text-align: center">Coding Quiz Challenge</h2>
+
+      <p style="text-align:center">Try to answer the following code-related questions within the time limit.</p>
+      <p style="text-align:center">Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+      </p>
+      <button id="start_btn">Start Quiz</button>
+</section> 
+  
   <!-- Start Quiz Button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
+ <section id ="container" class="hidden">
+  
+<!-- Divs for question -->
+    <div id="ask_questions"></div>
+    <ul id ="answer_questions">
+      <li id="option1"> test</li>
+      <li id="option2"> test</li>
+      <li id="option3"> test</li>
+      <li id="option4"> test</li>
+    </ul>
+    <div id ="result_questions"></div>
 
+</section> 
+</main>
+
+<section class="hidden" id="high-scores">
+    <p><span id="total-score"></span></p>
+
+ <!-- div to contain initials for high scores  -->
+    <input id="submitI" type="text" placeholder="Enter Your Initials">
+
+ <!-- button to Submit initials for high scores  -->   
+    <button class= "submit">Submit</button>
+  </section>
+  
+  <section id="High-Scores" class="hidden">
+
+    
+    
+    
+<!-- End section div -->
+
+<!-- // div to contain questions -->
+<!-- <div id="ask_questions"></div>
+  <ol>
+   <li class="alternative"></li>
+   <li class="alternative"></li>
+  <li class="alternative"></li>
+  <li class="alternative"></li> -->
+  
+  <!-- can also use a button group to answer questions -->
+<!-- <div class="btn-group">
+  <button class="button">Button</button>
+  <button class="button">Button</button>
+  <button class="button">Button</button>
+  <button class="button">Button</button>
+</div> -->
+
+
+
+<!--div to contain High Scores  -->
+<!-- div class Score buttons-  -->
+<div class="final-page">
+  
+  
+  <div class ="totalScore">
+    <button class="goBackI">Go Back</button>
+    <button class="clearScore">Clear High Scores</button>
+
+    
+  </div> 
+</section>
+
+  <!-- <li>Option 1</li> -->
+  <!-- <li>Option 2</li> -->
+  <!-- <li>Option 3</li> -->
+ 
+  <!-- <li>Option 4</li> -->
+ </ol>
 
 <script src= "assets/js/main.js"></script>
 </body>
